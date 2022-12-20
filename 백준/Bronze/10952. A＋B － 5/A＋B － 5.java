@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import java.util.StringTokenizer;
  
 public class Main {
  
@@ -9,15 +8,15 @@ public class Main {
  
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		
 		while(true) {
 			
-			st = new StringTokenizer(br.readLine()," ");
-			int A = Integer.parseInt(st.nextToken());
-			int B = Integer.parseInt(st.nextToken());
+			String str = br.readLine();
 			
+			int A = str.charAt(0) - 48;
+			int B = str.charAt(2) - 48;
+            
 			if(A==0 && B==0) {
 				break;
 			}
